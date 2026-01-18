@@ -147,15 +147,16 @@ export default function Pricing() {
                         </ul>
 
                         {/* CTA */}
-                        <button
-                            className={`w-full py-4 rounded-xl font-bold uppercase tracking-widest transition-all duration-300 ${
+                        <a
+                            href={`/payment-redirect?plan=${pkg.name}`}
+                            className={`block w-full py-4 rounded-xl font-bold uppercase tracking-widest transition-all duration-300 text-center ${
                                 pkg.highlight
                                     ? "bg-primary text-black hover:bg-white hover:scale-[1.02]"
                                     : "bg-white/5 text-white hover:bg-white hover:text-black border border-white/10"
                             }`}
                         >
                             Get Started
-                        </button>
+                        </a>
                     </div>
                 ))}
             </div>
