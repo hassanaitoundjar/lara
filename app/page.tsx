@@ -1,10 +1,11 @@
-import Image from "next/image";
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
+import Pricing from "@/components/sections/Pricing";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Experience />
       <Projects />
+      <Pricing />
       <Contact />
       <Footer />
     </main>
