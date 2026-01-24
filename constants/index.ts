@@ -149,25 +149,32 @@ export const YEARS = ["ALL", "2025", "2024", "2023"];
 
 export const EXPERIENCES = [
     {
-        company: "Google DeepMind",
-        role: "Senior Creative Technologist",
-        period: "2023 - Present",
-        description: "Leading the development of advanced agentic coding interfaces. Designing next-gen UI/UX for AI-human collaboration tools.",
-        tech: ["React", "WebGL", "GenAI", "Python"]
+        company: "DevHassan Studio",
+        role: "Lead Developer & Founder",
+        period: "2022 - Present",
+        description: "Building custom web and mobile applications for clients worldwide. Specializing in modern tech stacks and delivering high-performance solutions for businesses of all sizes.",
+        tech: ["Next.js", "React Native", "Laravel", "Flutter"]
     },
     {
-        company: "Stripe",
-        role: "Design Engineer",
-        period: "2021 - 2023",
-        description: "Architected and built interactive marketing pages for major product launches. Bridged the gap between design systems and production code.",
-        tech: ["Next.js", "Three.js", "Stripe API", "Figma"]
+        company: "Tech Solutions Agency",
+        role: "Full Stack Developer",
+        period: "2020 - 2022",
+        description: "Developed e-commerce platforms and business websites for local and international clients. Led frontend architecture decisions and mentored junior developers.",
+        tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"]
     },
     {
-        company: "Vercel",
-        role: "Frontend Developer",
-        period: "2019 - 2021",
-        description: "Contributed to the Next.js core framework and optimized edge rendering performance. Built internal developer tooling.",
-        tech: ["Next.js", "Rust", "Turbopack", "React"]
+        company: "Digital Creatives",
+        role: "Web Developer",
+        period: "2018 - 2020",
+        description: "Created responsive websites and landing pages for marketing campaigns. Implemented SEO best practices and optimized site performance for better user experience.",
+        tech: ["WordPress", "PHP", "JavaScript", "MySQL"]
+    },
+    {
+        company: "Freelance Projects",
+        role: "Independent Developer",
+        period: "2016 - 2018",
+        description: "Delivered custom web solutions for startups and small businesses. Built portfolio sites, booking systems, and content management platforms tailored to client needs.",
+        tech: ["Laravel", "Vue.js", "Bootstrap", "jQuery"]
     }
 ];
 
@@ -180,4 +187,59 @@ export const ABOUT_SPECS = [
     { label: "Frontend", value: "React / WebGL", desc: "Creating immersive, high-performance interfaces interacting at 60fps." },
     { label: "Backend", value: "Node / SQL", desc: "Architecting scalable server-side systems and robust data pipelines." },
     { label: "DevOps", value: "CI/CD / Cloud", desc: "Automating deployment workflows and ensuring 99.9% system uptime." }
+];
+
+// Pricing Plans Configuration
+export const PRICING_PLANS = [
+    {
+        id: "starter",
+        name: "STARTER",
+        price: 18,
+        description: "Perfect for personal blogs and simple landing pages.",
+        features: [
+            "Single Page Application",
+            "Mobile Responsive Design",
+            "Basic SEO Optimization",
+            "Contact Form Integration",
+            "1 Month Support"
+        ],
+        highlight: false,
+        color: "#00FFFF", // Cyan
+        paymentUrl: "https://whop.com/checkout/plan_fdEfF0drdTID3"
+    },
+    {
+        id: "professional",
+        name: "PROFESSIONAL",
+        price: 39,
+        description: "Ideal for small businesses and creative portfolios.",
+        features: [
+            "Multi-Page Website (up to 5)",
+            "CMS Integration (Sanity/Strapi)",
+            "Advanced Animations & Interactions",
+            "Google Analytics Setup",
+            "Social Media Integration",
+            "3 Months Support"
+        ],
+        highlight: true,
+        color: "#CCFF00", // Neon Lime
+        paymentUrl: "https://whop.com/checkout/plan_vGTMQFNesFnnV"
+    },
+    {
+        id: "enterprise",
+        name: "ENTERPRISE",
+        price: 60,
+        description: "Full-scale solution for e-commerce and complex web apps.",
+        features: [
+            "Custom Web Application",
+            "Database Integration",
+            "User Authentication",
+            "Payment Gateway Setup",
+            "Admin Dashboard",
+            "API Development",
+            "6 Months Support"
+        ],
+        highlight: false,
+        color: "#2D55FF", // Electric Blue
+        paymentUrl: "https://whop.com/checkout/plan_uyIp2jcCPDXBt"
+    }
 ];

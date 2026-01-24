@@ -104,7 +104,7 @@ export default function Navbar() {
                     {/* Center - Logo */}
                     <div className="absolute left-1/2 transform -translate-x-1/2 top-0 hidden md:block">
                         <Link href="/" className="text-4xl font-bold font-heading tracking-tighter hover:text-primary transition-colors mix-blend-difference">
-                            ALEX<span className="text-primary">.</span>DEV
+                            LARA<span className="text-primary">.</span>DEV
                         </Link>
                     </div>
 

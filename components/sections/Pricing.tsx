@@ -4,54 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Check, Info } from "lucide-react";
 import { useRef } from "react";
-
-const PACKAGES = [
-    {
-        name: "STARTER",
-        price: "18",
-        description: "Perfect for personal blogs and simple landing pages.",
-        features: [
-            "Single Page Application",
-            "Mobile Responsive Design",
-            "Basic SEO Optimization",
-            "Contact Form Integration",
-            "1 Month Support"
-        ],
-        highlight: false,
-        color: "#00FFFF" // Cyan
-    },
-    {
-        name: "PROFESSIONAL",
-        price: "39",
-        description: "Ideal for small businesses and creative portfolios.",
-        features: [
-            "Multi-Page Website (up to 5)",
-            "CMS Integration (Sanity/Strapi)",
-            "Advanced Animations & Interactions",
-            "Google Analytics Setup",
-            "Social Media Integration",
-            "3 Months Support"
-        ],
-        highlight: true,
-        color: "#CCFF00" // Neon Lime
-    },
-    {
-        name: "ENTERPRISE",
-        price: "60",
-        description: "Full-scale solution for e-commerce and complex web apps.",
-        features: [
-            "Custom Web Application",
-            "Database Integration",
-            "User Authentication",
-            "Payment Gateway Setup",
-            "Admin Dashboard",
-            "API Development",
-            "6 Months Support"
-        ],
-        highlight: false,
-        color: "#2D55FF" // Electric Blue
-    }
-];
+import { PRICING_PLANS } from "@/constants";
 
 export default function Pricing() {
     const containerRef = useRef<HTMLElement>(null);
@@ -97,17 +50,17 @@ export default function Pricing() {
 
             {/* Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {PACKAGES.map((pkg, index) => (
+                {PRICING_PLANS.map((plan) => (
                     <div
-                        key={pkg.name}
+                        key={plan.id}
                         className={`pricing-card relative p-8 rounded-[2rem] border transition-all duration-300 group hover:-translate-y-2 ${
-                            pkg.highlight
+                            plan.highlight
                                 ? "bg-white/10 border-primary/50 shadow-[0_0_30px_rgba(204,255,0,0.1)]"
                                 : "bg-white/5 border-white/10 hover:border-white/20"
                         }`}
                     >
                          {/* Highlight Badge */}
-                        {pkg.highlight && (
+                        {plan.highlight && (
                             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-black text-xs font-bold px-4 py-1 rounded-full uppercase tracking-widest shadow-lg">
                                 Most Popular
                             </div>
@@ -116,12 +69,12 @@ export default function Pricing() {
                         {/* Card Header */}
                         <div className="mb-8 p-4 rounded-2xl bg-black/20 text-center">
                             <h4 className="text-lg font-bold tracking-widest text-white/80 mb-2">
-                                {pkg.name}
+                                {plan.name}
                             </h4>
                             <div className="flex items-start justify-center gap-1 text-white">
                                 <span className="text-2xl mt-2">$</span>
-                                <span className="text-6xl font-black font-heading tracking-tighter" style={{ color: pkg.color }}>
-                                    {pkg.price}
+                                <span className="text-6xl font-black font-heading tracking-tighter" style={{ color: plan.color }}>
+                                    {plan.price}
                                 </span>
                             </div>
                             <p className="text-sm text-white/50 mt-2 font-mono uppercase tracking-wide">
@@ -131,14 +84,14 @@ export default function Pricing() {
 
                         {/* Description */}
                         <p className="text-white/70 text-center mb-8 h-12">
-                            {pkg.description}
+                            {plan.description}
                         </p>
 
                         {/* Features */}
                         <ul className="space-y-4 mb-10">
-                            {pkg.features.map((feature, i) => (
+                            {plan.features.map((feature, i) => (
                                 <li key={i} className="flex items-center gap-3 text-sm text-white/80">
-                                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-white/5 flex items-center justify-center text-primary">
+                                    <div className="shrink-0 w-6 h-6 rounded-full bg-white/5 flex items-center justify-center text-primary">
                                         <Check size={14} />
                                     </div>
                                     {feature}
@@ -148,9 +101,9 @@ export default function Pricing() {
 
                         {/* CTA */}
                         <a
-                            href={`/payment-redirect?plan=${pkg.name}`}
+                            href={`/payment-redirect?payment=${encodeURIComponent(plan.paymentUrl)}`}
                             className={`block w-full py-4 rounded-xl font-bold uppercase tracking-widest transition-all duration-300 text-center ${
-                                pkg.highlight
+                                plan.highlight
                                     ? "bg-primary text-black hover:bg-white hover:scale-[1.02]"
                                     : "bg-white/5 text-white hover:bg-white hover:text-black border border-white/10"
                             }`}
