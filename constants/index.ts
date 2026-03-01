@@ -169,13 +169,7 @@ export const EXPERIENCES = [
         description: "Created responsive websites and landing pages for marketing campaigns. Implemented SEO best practices and optimized site performance for better user experience.",
         tech: ["WordPress", "PHP", "JavaScript", "MySQL"]
     },
-    {
-        company: "Freelance Projects",
-        role: "Independent Developer",
-        period: "2016 - 2018",
-        description: "Delivered custom web solutions for startups and small businesses. Built portfolio sites, booking systems, and content management platforms tailored to client needs.",
-        tech: ["Laravel", "Vue.js", "Bootstrap", "jQuery"]
-    }
+    // Freelance/Custom project experience omitted for compliance
 ];
 
 export const SKILLS = [
@@ -193,15 +187,23 @@ export const ABOUT_SPECS = [
 export const PRICING_PLANS = [
     {
         id: "starter",
-        name: "STARTER",
+        name: "Starter Website Package",
         price: 18,
-        description: "Perfect for personal blogs and simple landing pages.",
+        description: "Single-page website for individuals or small projects. Fixed deliverables, no custom features.",
         features: [
-            "Single Page Application",
+            "1 Landing Page (up to 5 sections)",
             "Mobile Responsive Design",
-            "Basic SEO Optimization",
+            "Basic SEO Setup",
             "Contact Form Integration",
-            "1 Month Support"
+            "Delivery: 3 business days",
+            "1 Revision included (within 7 days)",
+            "Ownership transfer on delivery",
+            "Refund: Eligible before delivery only"
+        ],
+        exclusions: [
+            "No e-commerce",
+            "No custom backend",
+            "No ongoing support after delivery"
         ],
         highlight: false,
         color: "#00FFFF", // Cyan
@@ -209,16 +211,24 @@ export const PRICING_PLANS = [
     },
     {
         id: "professional",
-        name: "PROFESSIONAL",
+        name: "Professional Website Package",
         price: 39,
-        description: "Ideal for small businesses and creative portfolios.",
+        description: "Multi-page website for small businesses. Fixed scope, clear deliverables, no custom requests.",
         features: [
-            "Multi-Page Website (up to 5)",
+            "Up to 5 Pages",
             "CMS Integration (Sanity/Strapi)",
-            "Advanced Animations & Interactions",
+            "Advanced Animations",
             "Google Analytics Setup",
             "Social Media Integration",
-            "3 Months Support"
+            "Delivery: 7 business days",
+            "2 Revisions included (within 14 days)",
+            "Ownership transfer on delivery",
+            "Refund: Eligible before delivery only"
+        ],
+        exclusions: [
+            "No e-commerce",
+            "No custom backend",
+            "No additional pages beyond 5"
         ],
         highlight: true,
         color: "#CCFF00", // Neon Lime
@@ -226,20 +236,51 @@ export const PRICING_PLANS = [
     },
     {
         id: "enterprise",
-        name: "ENTERPRISE",
+        name: "Enterprise Website Package",
         price: 60,
-        description: "Full-scale solution for e-commerce and complex web apps.",
+        description: "Full-scale website for established businesses. Fixed deliverables, no open-ended features.",
         features: [
-            "Custom Web Application",
+            "Up to 10 Pages",
+            "Custom Web Application (pre-defined modules)",
             "Database Integration",
             "User Authentication",
             "Payment Gateway Setup",
             "Admin Dashboard",
-            "API Development",
-            "6 Months Support"
+            "Delivery: 14 business days",
+            "3 Revisions included (within 21 days)",
+            "Ownership transfer on delivery",
+            "Refund: Eligible before delivery only"
+        ],
+        exclusions: [
+            "No open-ended custom features",
+            "No additional pages beyond 10",
+            "No ongoing support after delivery"
         ],
         highlight: false,
         color: "#2D55FF", // Electric Blue
         paymentUrl: "https://whop.com/checkout/plan_uyIp2jcCPDXBt"
+    },
+    {
+        id: "maintenance",
+        name: "Website Maintenance Subscription",
+        price: 12,
+        description: "Monthly recurring maintenance for existing websites. SaaS-style subscription.",
+        features: [
+            "Monthly Security Updates",
+            "Uptime Monitoring",
+            "Minor Content Edits (up to 2 per month)",
+            "Monthly Backup",
+            "Priority Email Support",
+            "Cancel anytime (renews monthly)",
+            "Refund: Not eligible after service month starts"
+        ],
+        exclusions: [
+            "No new feature development",
+            "No redesigns",
+            "No major content changes"
+        ],
+        highlight: false,
+        color: "#FFB300", // Gold
+        paymentUrl: "https://whop.com/checkout/plan_maintenance_subscription"
     }
 ];

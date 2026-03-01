@@ -110,12 +110,7 @@ export default function Pricing() {
                 ))}
             </div>
             
-            <div className="mt-16 text-center">
-                <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-sm text-white/60">
-                     <Info size={16} className="text-primary" />
-                     <span>Need a custom quote? <a href="#contact" className="text-white hover:underline underline-offset-4 decoration-primary">Let&apos;s talk about your specific needs.</a></span>
-                </div>
-            </div>
+            {/* Removed custom quote CTA for compliance */}
         </section>
     );
 }

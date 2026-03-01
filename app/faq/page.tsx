@@ -14,7 +14,7 @@ const FAQ_DATA = [
       },
       {
         question: "How long does a typical project take?",
-        answer: "Project timelines vary based on complexity. A simple landing page (Starter) typically takes 3-5 days, a multi-page website (Professional) takes 1-2 weeks, and custom applications (Enterprise) can take 2-4 weeks. We'll provide a detailed timeline during our initial consultation."
+        answer: "Each package has a fixed delivery timeframe: Starter (3 business days), Professional (7 business days), Enterprise (14 business days). Timelines are guaranteed for the defined scope."
       },
       {
         question: "Do you work with clients internationally?",
@@ -37,10 +37,7 @@ const FAQ_DATA = [
         question: "What payment methods do you accept?",
         answer: "We accept all major credit cards, debit cards, and online payment methods through our secure payment processor (Stripe). All transactions are encrypted and secure."
       },
-      {
-        question: "Can I get a custom quote?",
-        answer: "Absolutely! If your project doesn't fit our standard packages, we're happy to provide a custom quote. Contact us with your requirements, and we'll prepare a tailored proposal within 24-48 hours."
-      },
+      // Removed custom quote FAQ for compliance
       {
         question: "Do you offer refunds?",
         answer: "Yes, we offer a 14-day money-back guarantee if no work has been started on your project. Once development begins, refunds are prorated based on work completed. See our Terms & Conditions for full details."
@@ -56,7 +53,7 @@ const FAQ_DATA = [
       },
       {
         question: "How many revisions are included?",
-        answer: "Starter package includes 2 revision rounds, Professional includes 3 rounds, and Enterprise includes unlimited revisions during the development phase. Additional revisions beyond these limits can be purchased separately."
+        answer: "Each package includes a fixed number of revisions: Starter (1), Professional (2), Enterprise (3). Additional revisions are not included."
       },
       {
         question: "Will I own the source code?",
@@ -81,7 +78,7 @@ const FAQ_DATA = [
       },
       {
         question: "Do you offer ongoing maintenance?",
-        answer: "Yes! We offer monthly maintenance packages that include regular updates, security patches, content updates, performance monitoring, and priority support. Contact us for pricing details."
+        answer: "Yes! We offer a fixed-scope monthly Website Maintenance Subscription for security updates, minor content edits, and priority support. See our Pricing page for details."
       },
       {
         question: "Can you help with SEO and marketing?",

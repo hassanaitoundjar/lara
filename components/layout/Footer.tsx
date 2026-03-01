@@ -27,7 +27,7 @@ export default function Footer() {
                             <Link href="/#projects" className="text-sm text-white/60 hover:text-primary transition-colors">
                                 Projects
                             </Link>
-                            <Link href="/#pricing" className="text-sm text-white/60 hover:text-primary transition-colors">
+                            <Link href="/pricing" className="text-sm text-white/60 hover:text-primary transition-colors">
                                 Pricing
                             </Link>
                             <Link href="/#contact" className="text-sm text-white/60 hover:text-primary transition-colors">
@@ -48,6 +48,9 @@ export default function Footer() {
                             </Link>
                             <Link href="/faq" className="text-sm text-white/60 hover:text-primary transition-colors">
                                 FAQ
+                            </Link>
+                            <Link href="/refund" className="text-sm text-white/60 hover:text-primary transition-colors">
+                                Refund Policy
                             </Link>
                         </div>
                     </div>

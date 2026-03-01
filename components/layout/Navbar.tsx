@@ -144,6 +144,8 @@ export default function Navbar() {
                     <div className="mt-8 flex gap-6">
                         <Link href="/terms" className="text-xs uppercase tracking-widest text-white/30 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Terms</Link>
                         <Link href="/privacy" className="text-xs uppercase tracking-widest text-white/30 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Privacy</Link>
+                        <Link href="/refund" className="text-xs uppercase tracking-widest text-white/30 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Refund Policy</Link>
+
                     </div>
                 </div>
 

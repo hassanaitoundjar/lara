@@ -218,15 +218,7 @@ export default function LandingPage() {
             ))}
           </div>
 
-          {/* Custom Quote CTA */}
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-sm text-white/60">
-              <span>Need a custom quote?</span>
-              <Link href="/#contact" className="text-white hover:underline underline-offset-4 decoration-primary">
-                Let&apos;s talk about your specific needs.
-              </Link>
-            </div>
-          </div>
+          {/* Removed custom quote CTA for compliance */}
         </div>
       </section>
 
