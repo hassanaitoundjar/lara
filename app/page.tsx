@@ -16,16 +16,20 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-background">
-      <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Pricing />
-      <Contact />
-      <Footer />
-    </main>
-  );
+    return (
+        <main className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-background">
+            <Navbar />
+            <Hero />
+            <section id="about-overview">
+                <About />
+            </section>
+            <section id="products-overview">
+                <Pricing />
+            </section>
+            <Projects />
+            <Experience />
+            <Contact />
+            <Footer />
+        </main>
+    );
 }

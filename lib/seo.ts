@@ -55,5 +55,25 @@ export const PAGE_METADATA = {
     title: "Frequently Asked Questions - DevHassan Studio",
     description: "Find answers to common questions about our web development services, pricing, project process, and support. Get the information you need.",
     keywords: "FAQ, web development questions, pricing questions, support information"
+  },
+  about: {
+    title: "About Us - DevHassan Studio | Professional Web Development",
+    description: "Learn more about DevHassan Studio, our mission, and our commitment to building high-quality web and mobile applications.",
+    keywords: "about us, web development agency, software engineering, mission statement"
+  },
+  products: {
+    title: "Our Services & Products - DevHassan Studio",
+    description: "Explore our web and mobile development services. From simple landing pages to complex enterprise applications, we deliver excellence.",
+    keywords: "web services, software products, SaaS solutions, development packages"
+  },
+  contact: {
+    title: "Contact Us - DevHassan Studio",
+    description: "Get in touch with DevHassan Studio for your next project. We're here to help you build your digital future.",
+    keywords: "contact us, hire developer, project inquiry, support"
+  },
+  checkout: {
+    title: "Secure Checkout - DevHassan Studio",
+    description: "Complete your purchase securely via Paddle. Trusted payment processing for your digital products.",
+    keywords: "secure checkout, payment, Paddle, buy software"
   }
 };

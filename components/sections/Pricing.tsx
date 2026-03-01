@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { Check, Info } from "lucide-react";
 import { useRef } from "react";
 import { PRICING_PLANS } from "@/constants";
+import PaddleCheckout from "@/components/paddle/PaddleCheckout";
 
 export default function Pricing() {
     const containerRef = useRef<HTMLElement>(null);
@@ -99,17 +100,12 @@ export default function Pricing() {
                             ))}
                         </ul>
 
-                        {/* CTA */}
-                        <a
-                            href={`/payment-redirect?payment=${encodeURIComponent(plan.paymentUrl)}`}
-                            className={`block w-full py-4 rounded-xl font-bold uppercase tracking-widest transition-all duration-300 text-center ${
-                                plan.highlight
-                                    ? "bg-primary text-black hover:bg-white hover:scale-[1.02]"
-                                    : "bg-white/5 text-white hover:bg-white hover:text-black border border-white/10"
-                            }`}
-                        >
-                            Get Started
-                        </a>
+                        <PaddleCheckout 
+                            priceId={plan.id === "starter" ? "pri_01jsc0..." : plan.id === "professional" ? "pri_01jsc2..." : "pri_01jsc3..."} 
+                            buttonText="Get Started"
+                            variant={plan.highlight ? "primary" : "secondary"}
+                            className="w-full"
+                        />
                     </div>
                 ))}
             </div>

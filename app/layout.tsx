@@ -92,6 +92,8 @@ export const metadata: Metadata = {
   category: "technology",
 };
 
+import PaddleLoader from "@/components/paddle/PaddleLoader";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -104,6 +106,7 @@ export default function RootLayout({
         cz-shortcut-listen="true"
       >
         <SmoothScroll>{children}</SmoothScroll>
+        <PaddleLoader />
       </body>
     </html>
   );

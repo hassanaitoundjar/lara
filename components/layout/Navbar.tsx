@@ -140,6 +140,11 @@ export default function Navbar() {
                             </FlipLink>
                         </div>
                     ))}
+                    {/* Extra Compliance Links for Mobile */}
+                    <div className="mt-8 flex gap-6">
+                        <Link href="/terms" className="text-xs uppercase tracking-widest text-white/30 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Terms</Link>
+                        <Link href="/privacy" className="text-xs uppercase tracking-widest text-white/30 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Privacy</Link>
+                    </div>
                 </div>
 
                 <div className="absolute bottom-10 left-0 right-0 text-center text-white/30 text-sm uppercase tracking-widest">

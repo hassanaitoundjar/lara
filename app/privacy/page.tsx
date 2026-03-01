@@ -154,9 +154,15 @@ export default function PrivacyPolicy() {
             
             <div className="space-y-4">
               <p className="text-white/70 leading-relaxed">
-                We may employ third-party companies and individuals to facilitate our service, provide the 
-                service on our behalf, or assist us in analyzing how our service is used. These third parties 
-                may have access to your personal data only to perform these tasks on our behalf.
+                We use Paddle for order processing and as our Merchant of Record. Paddle may collect and receive 
+                personal data from you, such as your email address and payment information, to facilitate 
+                transactions.
+              </p>
+              <p className="text-white/70 leading-relaxed">
+                For more information on how Paddle handles your data, please see 
+                <a href="https://www.paddle.com/legal/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1">
+                  Paddle&apos;s Privacy Policy
+                </a>.
               </p>
             </div>
           </div>

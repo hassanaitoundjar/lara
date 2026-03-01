@@ -117,24 +117,29 @@ export default function TermsAndConditions() {
             </div>
           </div>
 
-          {/* Refund Policy */}
+          {/* Refund & Cancellation Policy */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <RefreshCw className="w-8 h-8 text-primary" />
-              <h2 className="text-3xl font-bold font-heading">Refund Policy</h2>
+              <h2 className="text-3xl font-bold font-heading">Refund & Cancellation Policy</h2>
             </div>
             
             <div className="pl-11 space-y-4">
               <p className="text-white/70 leading-relaxed">
+                Our order process is conducted by our online reseller Paddle.com. Paddle.com is the Merchant 
+                of Record for all our orders. Paddle provides all customer service inquiries and handles returns.
+              </p>
+              <p className="text-white/70 leading-relaxed">
                 We offer a 14-day money-back guarantee from the date of purchase under the following conditions:
               </p>
               <ul className="list-disc list-inside text-white/70 space-y-2 ml-4">
-                <li>No work has been started on your project</li>
-                <li>You notify us within 14 days of purchase</li>
-                <li>Refund requests must be submitted in writing via email</li>
+                <li>No work has been started on your project or digital delivery has not occurred.</li>
+                <li>You notify us within 14 days of purchase.</li>
+                <li>Refund requests must be submitted via email to business@devhassan.studio.</li>
               </ul>
               <p className="text-white/70 leading-relaxed mt-4">
-                Once development work has begun, refunds will be prorated based on work completed.
+                Once development work has begun or digital assets have been delivered, refunds are not available 
+                unless clearly specified in our agreement.
               </p>
             </div>
           </div>
